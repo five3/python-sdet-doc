@@ -1,2 +1,2 @@
 # python-sdet-doc
-《Python测试开发入门与实践》图书视频相关文档
+《Python测试开发入门与实践》视频相关文档
