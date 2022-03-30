@@ -19,6 +19,7 @@ source ~/.bash_profile
 ```
 
 更多`Linux`系统安装`pyenv`的详细说明见官网[github](https://github.com/pyenv/pyenv.git)。
+如果`github`下载不了的，可以从[这里](https://download.csdn.net/download/five3/85056141)下载zip包
 
 ## 使用
 ### 版本及帮助查看
