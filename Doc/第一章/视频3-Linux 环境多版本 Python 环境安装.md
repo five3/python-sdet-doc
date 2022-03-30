@@ -35,7 +35,7 @@ pyenv install 3.7.5     # 安装具体的Python版本
 ```
 注意：如果安装过程中出现失败，可能是因为缺少基础依赖库的原因。可通过如下命令来安装所需的依赖库。
 ```bash
-yum install gcc zlib-devel bzip2 bzip2-devel readline-devel -y
+yum install gcc zlib-devel bzip2 bzip2-devel readline-devel openssl openssl-devel -y
 ```
 
 ### version/versions命令
