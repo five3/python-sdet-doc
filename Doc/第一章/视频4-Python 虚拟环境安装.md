@@ -24,7 +24,7 @@ pipenv install -r /path/to/requirements.txt
 # 安装setpu.py源码库
 pipenv install -e .
 ```
-注意：安装前需要配置下虚拟环境目录下的`Pipfile`文件中url字段，更新为国内三方库的源
+注意：安装前需要配置下虚拟环境目录下的`Pipfile`文件中url字段，更新为国内三方库的源（http://mirrors.aliyun.com/pypi/simple/）
 
 ## 使用
 交互式虚拟环境
