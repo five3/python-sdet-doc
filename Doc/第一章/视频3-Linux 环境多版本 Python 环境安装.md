@@ -9,16 +9,25 @@ Python 3.7 的共存，甚至还支持 CPython 与 PyPy、Jython、IronPython、
 等发行版的共存。
 
 ## 安装
+一键安装
+```bash
+curl https://pyenv.run | bash
+#or
+curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
+exec $SHELL
+```
+手动安装
 ```bash
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv 
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bash_profile 
 echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bash_profile 
-echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n eval "$(pyenv init -)"\nfi' >> 
-~/.bash_profile 
+echo 'eval "$(pyenv init --path)"' >> ~/.bash_profile 
+echo 'eval "$(pyenv init -)"' >> ~/.bash_profile 
 source ~/.bash_profile
 ```
 
 更多`Linux`系统安装`pyenv`的详细说明见官网[github](https://github.com/pyenv/pyenv.git)。
+如果`github`下载不了的，可以从[这里](https://download.csdn.net/download/five3/85056141)下载zip包
 
 ## 使用
 ### 版本及帮助查看
@@ -35,7 +44,7 @@ pyenv install 3.7.5     # 安装具体的Python版本
 ```
 注意：如果安装过程中出现失败，可能是因为缺少基础依赖库的原因。可通过如下命令来安装所需的依赖库。
 ```bash
-yum install gcc zlib-devel bzip2 bzip2-devel readline-devel
+yum install -y gcc zlib-devel bzip2 bzip2-devel readline-devel sqlite sqlite-devel openssl-devel tk-devel libffi-devel xz-devel
 ```
 
 ### version/versions命令
