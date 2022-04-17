@@ -13,10 +13,11 @@
 1. 控制类变量只能被赋值一次
 
 ## 代码
+代码文件名称`Constant.py`
 ```python
 import sys
 
-class Const:
+class Constant:
     # 自定义异常处理
     class ConstValueError(PermissionError):
         pass
@@ -54,7 +55,7 @@ def Singleton(cls):
     return _singleton_wrapper
 
 @Singleton
-class Const:
+class Constant:
     # 自定义异常处理
     class ConstValueError(PermissionError):
         pass
@@ -76,8 +77,8 @@ sys.modules[__name__] = Const()
 
 ## 使用
 ```python
-import constant
+import Constant
 
-constant.MAX_VALUE = 100
-print(constant.MAX_VALUE)
+Constant.MAX_VALUE = 100
+print(Constant.MAX_VALUE)
 ```
