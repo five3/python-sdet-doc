@@ -34,7 +34,7 @@ class Constant:
             
         self.__dict__[name] = value
 
-sys.modules[__name__] = Const()
+sys.modules[__name__] = Constant()
 ```
 
 支持多线程的单例版本。
@@ -72,7 +72,7 @@ class Constant:
             
         self.__dict__[name] = value
 
-sys.modules[__name__] = Const()
+sys.modules[__name__] = Constant()
 ```
 
 ## 使用
