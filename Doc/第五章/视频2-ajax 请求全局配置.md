@@ -1,5 +1,10 @@
 # ajax 请求全局配置
 
+## 库安装
+```bash
+npm install axios -g
+```
+
 ## 前端使用
 ```html
 <!-- 引入 Vue 库 --> 
