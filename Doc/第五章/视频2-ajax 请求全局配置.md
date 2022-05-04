@@ -2,7 +2,7 @@
 
 ## 库安装
 ```bash
-npm install axios -g
+npm install --save axios
 ```
 
 ## 前端使用
