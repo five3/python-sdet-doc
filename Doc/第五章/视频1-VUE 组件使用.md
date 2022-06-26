@@ -74,7 +74,6 @@ Vue.component('btn', {
 <script type="text/javascript"> 
  // 组件定义与注册
  Vue.component('btn', { 
-   props: ['name'], 
    template: '<button v-on:click="$emit('incr')">单击增加</button>' 
  }) 
  // VUE实例化

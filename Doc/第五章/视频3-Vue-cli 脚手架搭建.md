@@ -2,8 +2,8 @@
 
 ## 安装
 ```bash
-npm install webpack webpack-cli -g
-npm install vue-cli -g
+npm install webpack webpack-cli -g --registry=https://registry.npm.taobao.org
+npm install vue-cli -g --registry=https://registry.npm.taobao.org
 ```
 
 ## 构建
